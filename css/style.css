@@ -1,0 +1,179 @@
+/*            ADVENTURES TIME STYLE 
+-------------------------------------------------
+Adventures time ft-003                                
+-------------------------------------------------                                                 
+https://Adventurestime.com/ft-003    
+-------------------------------------------------
+-------------------------------------------------
+*/
+
+/*-----------------------------------------------
+||fonts
+-------------------------------------------------
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=MuseoModernoc@import urldisplay=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Knewave&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Knewave&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave&family=Skranji:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Knewave&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Oleo+Script+Swash+Caps:wght@400;700&family=Sedgwick+Ave&family=Skranji:wght@400;700&display=swap');
+
+/*-----------------------------------------------
+||global style
+-------------------------------------------------
+*/
+:root{
+    /* colors */
+    --bg-color: #fff;
+    --graish: #f1f1f1;
+    --primary: #ff4800;
+    --secondary: #00006e;
+    --hover: #f57804;
+    --active: #ff5300;
+    --blight: #00000025;
+    --bg-fb: #188dfc;
+    --bg-xtw: #43c3ff;
+    --bg-wtsp: #00ff00;
+    --bg-inst: #ff0040;
+    /* fonts */
+    --bokor: "bokor" system-ui;
+    --Sedgwick: "Sedgwick Ave", cursive;
+    --MuseoModerno: "MuseoModerno", sans-serif;
+    --Gluten: "Gluten", cursive;
+    --Skranji: "Skranji", system-ui;
+    --Oleo: "Oleo Script Swash Caps", system-ui;
+    --verdana: verdana;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+body,.navbar{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: var(--bg-color);
+    font-size: 2.4rem;
+    font-family: var(--Sedgwick);
+    text-shadow: var(--primary) 3px  2px;
+}
+
+/*-----------------------------------------------
+||navbar section
+-------------------------------------------------
+*/
+.navbar{
+    top: 0;
+    display: flex;
+    height: 11vh;
+    width: 100%;
+    color: #fff;
+    position: fixd;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary);
+}
+
+.navbar .brand{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: var(--Gluten);
+}
+
+
+.navbar nav{
+    display: flex;
+    margin-right: 20px;
+    flex-direction: row;
+    font-family: var(--Sedgwick);
+}
+
+.navbar nav li{
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: auto 13px;
+}
+
+.navbar nav li a{color: var(--bg-color);}
+
+.navbar nav li .dropdown{
+    display: none;
+}
+
+.navbar .respo-nav{
+    display: none;
+}
+/*-----------------------------------------------
+||hero section
+-------------------------------------------------
+*/
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    padding: 40px 0;
+    margin: 0 0 15vh 0;
+    position: relative;
+    align-items: cente;
+    justify-content: space-between;
+    background: url(../img/bg-h.jpg) no-repeat;
+    background-size: cover;
+}
+
+.hero .tag-container{
+    width: 50vw;
+    margin: 30px  20px;
+}
+
+.hero .sd-container{
+    padding: 0 12px;
+    position: absolute;
+    width: 34vw;
+    height: 35vh;
+    margin: 20vh 0 0 25px;
+    background: #0002702a;
+    border-radius: 8px;
+}
+
+.hero .sd-container p{
+    color: var(--graish);
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: var(--verdana);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero .sd-container .sd-img{
+   align-items: center;
+   display: flex;
+   justify-content: space-around;
+   margin: 15px 0 0 0;
+}
+
+.hero .sd-container .sd-img p{
+    font-size: 1.5rem;
+}
+
+.hero .sd-container .sd-img img{
+    height: 15vh;
+    width: 17vh;
+    opacity: 0.75;
+    padding: 12px;
+    border-radius: 25px;
+}
+
+/*-----------------------------------------------
+||footer section
+-------------------------------------------------
+*/
+footer{
+    background-color: var(--graish);
+}
+/*-----------------------------------------------
+||responsive style 
+-------------------------------------------------
+*/
